@@ -1,0 +1,11 @@
+apiVersion: v1
+
+kind: Namespace
+
+metadata:
+
+  name: haproxy-controller-devops
+
+  labels:
+
+    name: haproxy-controller-devops

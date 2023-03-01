@@ -1,0 +1,31 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata:
+
+  name: webapp
+
+spec:
+
+  volumes:
+
+    - name: pv-log
+
+      persistentVolumeClaim:
+
+        claimName: claim-log-1
+
+  containers:
+
+    - name: webapp
+
+      image: nginx
+
+      volumeMounts:
+
+        - mountPath: "/var/log/nginx"
+
+          name: pv-log
+
+

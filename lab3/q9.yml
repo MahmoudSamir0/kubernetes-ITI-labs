@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+
+  name: web-app
+
+  labels:
+
+    app: web-app
+    type: front-end
+
+spec:
+
+  replicas: 2
+
+  selector:
+
+    matchLabels:
+
+      app: web-app
+      type: front-end
+
+
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: web-app
+        type: front-end
+
+
+    spec:
+
+      containers:
+
+      - name: web-app
+
+        image: nginx
+
+        ports:
+
+        - containerPort: 80
