@@ -1,3 +1,3 @@
 # kubernetes-ITI-lab
 
-![lab](https://github.com/MahmoudSamir0/project-terraform-gcp-gke-infrastructure/blob/master/screenshot/w.png)
+![lab](https://github.com/MahmoudSamir0/kubernetes-ITI-labs/blob/master/lab3/lab3.png)
